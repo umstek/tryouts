@@ -2,8 +2,12 @@ name: Verify PR
 on: 
   pull_request:
     branches: 
-      - master
+      - main
     types: [created, opened, synchronize, reopened, ready_for_review, review_requested]
+  pull_request_review:
+    types: [submitted]
+    branches:
+      - main
 
 
   # Allows you to run this workflow manually from the Actions tab
