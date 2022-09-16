@@ -39,21 +39,12 @@ body:
     validations:
       required: true
   - type: textarea
-    id: current-behavior
+    id: issue
     attributes:
-      label: Current Behavior
-      description: Tell us what happened.
+      label: Current Behavior and Expected behavior
+      description: Tell us what happened and what should happen. Also include additional information such as your operating system version.
       placeholder: What's wrong?
-      value: "A bug happened!"
-    validations:
-      required: true
-  - type: textarea
-    id: expected-behavior
-    attributes:
-      label: Expected Behavior
-      description: Tell us what is expected.
-      placeholder: How should it be?
-      value: "It should work!"
+      value: "A bug happened, but it should work."
     validations:
       required: true
   - type: textarea
@@ -62,11 +53,6 @@ body:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
-  - type: textarea
-    id: extra
-    attributes:
-      label: Anything else?
-      description: Other browser or operating system details
   - type: input
     id: contact
     attributes:
