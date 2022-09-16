@@ -33,6 +33,8 @@ body:
       description: Tell us what is expected.
       placeholder: How should it be?
       value: "It should work!"
+    validations:
+      required: true
   - type: input
     id: version
     attributes:
@@ -45,19 +47,34 @@ body:
   - type: dropdown
     id: browsers
     attributes:
+      label: What operating systems are you seeing the problem on?
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - Mac OS X
+        - Other
+  - type: dropdown
+    id: browsers
+    attributes:
       label: What browsers are you seeing the problem on?
       multiple: true
       options:
         - Firefox
         - Chrome/Edge/Opera
         - Safari
-        - Other (state in description)
+        - Other
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Other browser or operating system details
   - type: checkboxes
     id: terms
     attributes:
