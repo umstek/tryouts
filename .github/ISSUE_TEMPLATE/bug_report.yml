@@ -12,7 +12,7 @@ body:
   - type: dropdown
     id: operating-systems
     attributes:
-      label: What operating systems are you seeing the problem on?
+      label: What perating systems are you seeing the problem on?
       multiple: true
       options:
         - Windows
@@ -41,7 +41,7 @@ body:
   - type: textarea
     id: issue
     attributes:
-      label: Current Behavior and Expected behavior
+      label: Current behavior and expected behavior
       description: Tell us what happened and what should happen. Also include additional information such as your operating system version.
       placeholder: What's wrong?
       value: "A bug happened, but it should work."
@@ -56,7 +56,7 @@ body:
   - type: input
     id: contact
     attributes:
-      label: Contact Details
+      label: Contact details
       description: How can we get in touch with you if we need more info?
       placeholder: email@example.com
     validations:
@@ -64,7 +64,7 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
+      label: Code of conduct
       description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
       options:
         - label: I agree to follow this project's Code of Conduct
