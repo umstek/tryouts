@@ -29,6 +29,14 @@ body:
         - Chrome/Edge/Opera
         - Safari
         - Other
+  - type: dropdown
+    id: component
+    attributes:
+      label: In what component do you think the error is in?
+      multiple: true
+      options:
+        - Frontend
+        - Backend
   - type: input
     id: version
     attributes:
