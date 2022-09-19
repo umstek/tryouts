@@ -1,0 +1,52 @@
+name: Feature request
+about: Suggest an idea for this project
+title: 'Feature: '
+labels: ["feature", "new"\
+assignees: 
+  - umstek
+body: 
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a feature!
+  - type: textarea
+    id: description
+    attributes:
+      label: Is your feature request related to a problem? Please describe.
+      description: A clear and concise description of what the problem is.
+      placeholder: Problem description
+      value: "I'm always frustrated when [...]"
+  - type: textarea
+    id: description
+    attributes:
+      label: What is the solution you'd like?
+      description: A clear and concise description of what you want to happen.
+      placeholder: Feature description
+      value: "I would like if [...]"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+      placeholder: UI changes, flow changes,...
+      value: ""
+  - type: input
+    id: contact
+    attributes:
+      label: Contact details
+      description: How can we get in touch with you if we need more info?
+      placeholder: email@example.com
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I tried my best to ensure this is not a duplicate
+          required: true
+        - label: I agree to follow this project's Code of Conduct
+          required: true
