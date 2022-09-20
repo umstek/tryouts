@@ -7,4 +7,11 @@ Tryout git/github features
 
 <a href="/umstek/tryouts/blob/main/README.md" class="btn btn-primary">This</a>
 
+https://github.com/umstek/tryouts/discussions
+[Discussions full URL](https://github.com/umstek/tryouts/discussions)
+[Discussions relative to domain, with slash prefix](/umstek/tryouts/discussions)
+[Discussions relative to domain](umstek/tryouts/discussions)
+[Discussions relative to repo, with slash prefix](/discussions)
+[Discussions relative to repo](discussions)
+
 Test
