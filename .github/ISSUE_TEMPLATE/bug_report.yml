@@ -1,0 +1,81 @@
+name: Bug Report
+description: File a bug report
+title: "Bug: "
+labels: ["bug", "new"]
+assignees:
+  - umstek
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: dropdown
+    id: operating-systems
+    attributes:
+      label: What operating systems are you seeing the problem on?
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - Mac OS X
+        - Other
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome/Edge/Opera
+        - Safari
+        - Other
+  - type: dropdown
+    id: component
+    attributes:
+      label: In what component do you think the error is in?
+      multiple: true
+      options:
+        - Frontend
+        - Backend
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: What version of our software are you running?
+      placeholder: Version number or commit hash
+      value: frontend v6.0.0, backend v2.50.0
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Current behavior and expected behavior
+      description: Tell us what happened and what should happen. Also include additional information such as your operating system version.
+      placeholder: What's wrong?
+      value: "A bug happened, but it should work."
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: input
+    id: contact
+    attributes:
+      label: Contact details
+      description: How can we get in touch with you if we need more info?
+      placeholder: email@example.com
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I tried my best to ensure this is not a duplicate
+          required: true
+        - label: I agree to follow this project's Code of Conduct
+          required: true
